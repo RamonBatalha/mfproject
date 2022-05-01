@@ -7,10 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Mossoró Farma</title>
 </head>
 
@@ -26,28 +23,23 @@
             </div>
         </div>
 
-         <div id="login">
-            <div>
-                <a href="#"><img src="media/login.png" alt="login image" id="loginimg"></a>
-                <span class="olb">Olá, Bem vindo!</span> <br>
-            </div>
-            <div>
-                <p class="blueb tentrar" ><a href="#">Entrar</a></p>
-            </div>
-        </div>  
 
-       <div id="cesta">
-            <div>
-                <a href="#"><img src="media/cesta.png" alt="minhas compras image" id="cestaimg"></a> <br>
-                <span class="mc">Minhas</span>
-            </div>
-            <div>
-                <p class="blueb tcompras"><a href="#">Compras</a></p>
-            </div>
-        </div>  
 
-        
-        
+        <div id="login">
+            <a href="#"><img src="media/login.png" alt="login image" id="loginimg"></a>
+            <span class="olb">Olá, Bem vindo!</span> <br>
+            <p class="blueb tentrar"><a href="#">Entrar</a></p>
+        </div>
+
+        <div id="cesta">
+
+
+            <a href="#"><img src="media/cesta.png" alt="minhas compras image" id="cestaimg"></a> <br>
+            <span class="mc">Minhas</span>
+            <p class="blueb tcompras"><a href="#">Compras</a></p>
+
+        </div>
+
     </header>
 
     <main>
@@ -64,20 +56,33 @@
 
         <!--divisão e ínicio Banner Rotativo-->
 
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper" id="brdesktop">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="media/bannerex.jpg" alt="exemplo banner" id="bannerrotativo"></div>
-              <div class="swiper-slide"><img src="media/banner2.webp" alt="exemplo banner" id="bannerrotativo"></div>
-              <div class="swiper-slide"><img src="media/banner3.webp" alt="exemplo banner" id="bannerrotativo"></div>
+                <div class="swiper-slide"><img src="media/bannerex.jpg" alt="exemplo banner" class="bannerrotativo">
+                </div>
+                <div class="swiper-slide"><img src="media/banner2.webp" alt="exemplo banner" class="bannerrotativo">
+                </div>
+                <div class="swiper-slide"><img src="media/banner3.webp" alt="exemplo banner" class="bannerrotativo">
+                </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
-          </div>
+        </div>
 
-        
-
-
+        <div class="swiper mySwiper" id="brmobile">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="media/bannermobile.webp" alt="exemplo banner"
+                        class="bannerrotativomobile"></div>
+                <div class="swiper-slide"><img src="media/bannermobile3.webp" alt="exemplo banner"
+                        class="bannerrotativomobile"></div>
+                <div class="swiper-slide"><img src="media/bannermobile3.webp" alt="exemplo banner"
+                        class="bannerrotativomobile"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
 
         <div class="allminibox">
             <div class="minibox">
@@ -103,80 +108,79 @@
 
         <h2>Mais Vendidos</h2>
 
-        <div class="swiper mySwiper2">
-            <div class="swiper-wrapper">
+        <div class="swiper mySwiper2 containermv">
+            <div class="swiper-wrapper containermv">
                 <div class="swiper-slide">
                     <div class="mv">
-                    <img src="media/coracao.png" alt="coração adicionar lista de desejos"
-                            class="coracao">
+                        <img src="media/coracao.png" alt="coração adicionar lista de desejos" class="coracao">
                         <img src="media/dorflexsf.png" alt="imagem dor flex" class="dorflex" id="coracao1">
                         <p class="mvbox">Dorflex - 300mg</p>
                         <p class="mvpreço">R$ 22,00</p>
                         <button type="button" class="button"><span>Adicionar</span></button>
-                     </div>
+                    </div>
                 </div>
-                <div class="swiper-slide"><div class="mv">
-                    <img src="media/coracao.png" alt="coração adicionar lista de desejos"
-                            class="coracao">
+                <div class="swiper-slide">
+                    <div class="mv">
+                        <img src="media/coracao.png" alt="coração adicionar lista de desejos" class="coracao">
                         <img src="media/dorflexsf.png" alt="imagem dor flex" class="dorflex" id="coracao1">
                         <p class="mvbox">Dorflex - 300mg</p>
                         <p class="mvpreço">R$ 22,00</p>
                         <button type="button" class="button"><span>Adicionar</span></button>
-                     </div>
+                    </div>
                 </div>
-                <div class="swiper-slide"><div class="mv">
-                    <img src="media/coracao.png" alt="coração adicionar lista de desejos"
-                            class="coracao">
+                <div class="swiper-slide">
+                    <div class="mv">
+                        <img src="media/coracao.png" alt="coração adicionar lista de desejos" class="coracao">
                         <img src="media/dorflexsf.png" alt="imagem dor flex" class="dorflex" id="coracao1">
                         <p class="mvbox">Dorflex - 300mg</p>
                         <p class="mvpreço">R$ 22,00</p>
                         <button type="button" class="button"><span>Adicionar</span></button>
-                     </div>
+                    </div>
                 </div>
-                <div class="swiper-slide"><div class="mv">
-                    <img src="media/coracao.png" alt="coração adicionar lista de desejos"
-                            class="coracao">
+                <div class="swiper-slide">
+                    <div class="mv">
+                        <img src="media/coracao.png" alt="coração adicionar lista de desejos" class="coracao">
                         <img src="media/dorflexsf.png" alt="imagem dor flex" class="dorflex" id="coracao1">
                         <p class="mvbox">Dorflex - 300mg</p>
                         <p class="mvpreço">R$ 22,00</p>
                         <button type="button" class="button"><span>Adicionar</span></button>
-                     </div>
+                    </div>
                 </div>
-                <div class="swiper-slide"><div class="mv">
-                    <img src="media/coracao.png" alt="coração adicionar lista de desejos"
-                            class="coracao">
+                <div class="swiper-slide">
+                    <div class="mv">
+                        <img src="media/coracao.png" alt="coração adicionar lista de desejos" class="coracao">
                         <img src="media/dorflexsf.png" alt="imagem dor flex" class="dorflex" id="coracao1">
                         <p class="mvbox">Dorflex - 300mg</p>
                         <p class="mvpreço">R$ 22,00</p>
                         <button type="button" class="button"><span>Adicionar</span></button>
-                     </div>
+                    </div>
                 </div>
-                <div class="swiper-slide"><div class="mv">
-                    <img src="media/coracao.png" alt="coração adicionar lista de desejos"
-                            class="coracao">
+                <div class="swiper-slide">
+                    <div class="mv">
+                        <img src="media/coracao.png" alt="coração adicionar lista de desejos" class="coracao">
                         <img src="media/dorflexsf.png" alt="imagem dor flex" class="dorflex" id="coracao1">
                         <p class="mvbox">Dorflex - 300mg</p>
                         <p class="mvpreço">R$ 22,00</p>
                         <button type="button" class="button"><span>Adicionar</span></button>
-                     </div>
+                    </div>
                 </div>
-                <div class="swiper-slide"><div class="mv">
-                    <img src="media/coracao.png" alt="coração adicionar lista de desejos"
-                            class="coracao">
+                <div class="swiper-slide">
+                    <div class="mv">
+                        <img src="media/coracao.png" alt="coração adicionar lista de desejos" class="coracao">
                         <img src="media/dorflexsf.png" alt="imagem dor flex" class="dorflex" id="coracao1">
                         <p class="mvbox">Dorflex - 300mg</p>
                         <p class="mvpreço">R$ 22,00</p>
                         <button type="button" class="button"><span>Adicionar</span></button>
-                     </div>
+                    </div>
                 </div>
-                <div class="swiper-slide"><div class="mv">
-                    <img src="media/coracao.png" alt="coração adicionar lista de desejos"
-                            class="coracao">
+                <div class="swiper-slide">
+                    <div class="mv">
+                        <img src="media/coracao.png" alt="coração adicionar lista de desejos" class="coracao">
                         <img src="media/dorflexsf.png" alt="imagem dor flex" class="dorflex" id="coracao1">
                         <p class="mvbox">Dorflex - 300mg</p>
                         <p class="mvpreço">R$ 22,00</p>
                         <button type="button" class="button"><span>Adicionar</span></button>
-                     </div>
+                    </div>
                 </div>
 
             </div>
@@ -188,9 +192,11 @@
 
         </div>
 
+        <img src="media/bannermobile1.jpg" alt="" id="minibannermobile">
+
         <h2>Promoções</h2>
         <div class="swiper mySwiper2">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper containermv">
                 <div class="swiper-slide">
                     <div class="mv">
                         <p class="tagpromocao">-25%</p>
@@ -199,29 +205,7 @@
                         <p class="mvbox">Dorflex - 300mg</p>
                         <p class="mvpreço">R$ 22,00</p>
                         <button type="button" class="button">Adicionar</button>
-        
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="mv">
-                    <p class="tagpromocao">-25%</p>
-                    <img src="media/coracao.png" alt="coração adicionar lista de desejos" class="coracao">
-                    <img src="media/dorflexsf.png" alt="imagem dor flex" class="dorflex" id="coracao1">
-                    <p class="mvbox">Dorflex - 300mg</p>
-                    <p class="mvpreço">R$ 22,00</p>
-                    <button type="button" class="button">Adicionar</button>
-    
-                </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="mv">
-                        <p class="tagpromocao">-25%</p>
-                        <img src="media/coracao.png" alt="coração adicionar lista de desejos" class="coracao">
-                        <img src="media/dorflexsf.png" alt="imagem dor flex" class="dorflex" id="coracao1">
-                        <p class="mvbox">Dorflex - 300mg</p>
-                        <p class="mvpreço">R$ 22,00</p>
-                        <button type="button" class="button">Adicionar</button>
-        
+
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -232,7 +216,7 @@
                         <p class="mvbox">Dorflex - 300mg</p>
                         <p class="mvpreço">R$ 22,00</p>
                         <button type="button" class="button">Adicionar</button>
-        
+
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -243,7 +227,7 @@
                         <p class="mvbox">Dorflex - 300mg</p>
                         <p class="mvpreço">R$ 22,00</p>
                         <button type="button" class="button">Adicionar</button>
-        
+
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -254,7 +238,7 @@
                         <p class="mvbox">Dorflex - 300mg</p>
                         <p class="mvpreço">R$ 22,00</p>
                         <button type="button" class="button">Adicionar</button>
-        
+
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -265,7 +249,7 @@
                         <p class="mvbox">Dorflex - 300mg</p>
                         <p class="mvpreço">R$ 22,00</p>
                         <button type="button" class="button">Adicionar</button>
-        
+
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -276,7 +260,29 @@
                         <p class="mvbox">Dorflex - 300mg</p>
                         <p class="mvpreço">R$ 22,00</p>
                         <button type="button" class="button">Adicionar</button>
-        
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mv">
+                        <p class="tagpromocao">-25%</p>
+                        <img src="media/coracao.png" alt="coração adicionar lista de desejos" class="coracao">
+                        <img src="media/dorflexsf.png" alt="imagem dor flex" class="dorflex" id="coracao1">
+                        <p class="mvbox">Dorflex - 300mg</p>
+                        <p class="mvpreço">R$ 22,00</p>
+                        <button type="button" class="button">Adicionar</button>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mv">
+                        <p class="tagpromocao">-25%</p>
+                        <img src="media/coracao.png" alt="coração adicionar lista de desejos" class="coracao">
+                        <img src="media/dorflexsf.png" alt="imagem dor flex" class="dorflex" id="coracao1">
+                        <p class="mvbox">Dorflex - 300mg</p>
+                        <p class="mvpreço">R$ 22,00</p>
+                        <button type="button" class="button">Adicionar</button>
+
                     </div>
                 </div>
 
@@ -289,15 +295,26 @@
         <div id="minibanners1">
             <img src="media/minibanner1.jpg" alt="banner publicitário vitamina neoquímica" class="minibanner">
             <img src="media/minibanner2.jpg" alt="banner publicitário produtos seda linha princesa" class="minibanner">
+
         </div>
 
-        <h2 style="color: #4D5877;">Linha Pantene</h2>
+
+        <img src="media/bannermobile1.jpg" alt="" id="minibannermobile">
+
+
+        <h2 style="color: #4D5877" ;>Linha Pantene</h2>
 
         <div class="loreal">
             <img src="media/loreal1.webp" alt="" class="bannerloreal">
             <img src="media/loreal2.webp" alt="" class="bannerloreal">
             <img src="media/loreal3.webp" alt="" class="bannerloreal">
             <img src="media/loreal4.webp" alt="" class="bannerloreal">
+        </div>
+
+        <div id="lorealmobile">
+            <img src="media/loreal1.webp" alt="" class="bannerlorealmobile" id="adjustmargin">
+            <img src="media/loreal2.webp" alt="" class="bannerlorealmobile" id="adjustmargin">
+
         </div>
 
         <div id="minibanners2">
@@ -326,7 +343,7 @@
                         <p class="pcontatos">Televendas</p><br>
                     </div>
                     <div><span class="cont1">9999-9999</span> </div>
-                    <div><span class="cont1">Horário de atendimento das</span></div> 
+                    <div><span class="cont1">Horário de atendimento das</span></div>
                     <div><span class="cont1">7h às 21h, de segunda a segunda</span></div>
                 </div>
                 <div class="divcontatos">
@@ -357,12 +374,11 @@
                         <img src="media/elo.png" alt="" class="cards">
                     </div>
                 </div>
+
                 <div class="dadosgerais institucional">
                     <ul class="listdg">
-                        
-                    
+
                         <li class="tituloazul">Institucional</li> <br>
-                        
 
                         <a href="#">
                             <li>Nossa história</li>
@@ -382,6 +398,7 @@
                         <a href="#">
                             <li>Convênios</li>
                         </a>
+
                     </ul>
                 </div>
 
@@ -426,44 +443,80 @@
                     </ul>
                 </div>
 
-                
-            </div>
-<div id="infofinal">
-    
-               <div><img src="media/logomf500.png" alt="" id="logofinalpg"></div>
-    
-                    <div id="pfinal">
-                        <spam>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, necessitatibus. Quod doloribus, pariatur aliquid odit blanditiis nesciunt iure ratione ipsa a ipsam soluta maxime, ducimus neque dicta cum quis delectus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos harum perferendis ex libero magni aut eum quaerat expedita voluptatum odit quae unde magnam quos, tempore autem porro fuga. Vel, nemo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, nesciunt asperiores doloremque nihil doloribus facere? Odit sapiente neque alias vitae eum, assumenda accusantium asperiores ab vero soluta, autem provident ratione!</spam>
-                    </div>
-</div>
 
+            </div>
+            <div id="infofinal">
+
+                <div><img src="media/logomf500.png" alt="" id="logofinalpg"></div>
+
+                <div id="pfinal">
+                    <spam>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, necessitatibus. Quod
+                        doloribus, pariatur aliquid odit blanditiis nesciunt iure ratione ipsa a ipsam soluta maxime,
+                        ducimus neque dicta cum quis delectus? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Eos harum perferendis ex libero magni aut eum quaerat expedita voluptatum odit quae unde magnam
+                        quos, tempore autem porro fuga. Vel, nemo! Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Aut, nesciunt asperiores doloremque nihil doloribus facere? Odit sapiente neque alias
+                        vitae eum, assumenda accusantium asperiores ab vero soluta, autem provident ratione!</spam>
+                </div>
+
+            </div>
         </footer>
+
+        <div class="footermobile">
+            <ul>
+                <a href="">
+                    <li>Institucional</li>
+                </a>
+                <a href="">
+                    <li>Serviços</li>
+                </a>
+                <a href="">
+                    <li>Minha Conta</li>
+                </a>
+                <a href="">
+                    <li>Contatos</li>
+                </a>
+            </ul>
+        </div>
     </main>
-    
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 4500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
 
-      var swiper = new Swiper(".mySwiper2", {
-            slidesPerView: 4,
-            spaceBetween: 45,
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 1,
+            spaceBetween: 30,
             slidesPerGroup: 1,
+            breakpoints: {
+
+                // when window width is >= 576px
+                577: {
+                    slidesPerView: 4,
+                    spaceBetween: 10
+                },
+                // when window width is >= 800px
+                800: {
+                    slidesPerView: 4,
+                    spaceBetween: 45
+                }
+            },
             loop: true,
             loopFillGroupWithBlank: true,
             pagination: {
@@ -475,7 +528,8 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-      </script>
+
+    </script>
 </body>
 
 </html>

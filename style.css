@@ -13,7 +13,6 @@ a {
   text-decoration: none;
   color: #008094;
   ;
-
 }
 
 /* Hearder */
@@ -44,7 +43,7 @@ header {
 
 .olb {
   position: absolute;
-  right: 20px;
+  right: 5px;
   top: 10px;
 }
 
@@ -56,16 +55,16 @@ header {
   top: 30px;
 }
 
+
 #cesta {
   display: flex;
   flex-direction: column;
   position: absolute;
   align-items: center;
   top: 30px;
-  right: 0.732vw;
+  right: 0vw;
   width: 180px;
   height: 100px;
-
 }
 
 #cestaimg {
@@ -73,13 +72,16 @@ header {
   left: 5px;
   height: 40px;
   width: 40px;
+}
 
-
+#divlogin {
+  width: 50px;
+  margin-left: 10px;
 }
 
 .mc {
   position: absolute;
-  right: 75px;
+  right: 67px;
   top: 10px;
 }
 
@@ -97,13 +99,16 @@ body header div p {
 body header div a {
   text-decoration: none;
   color: blue;
-
 }
 
 
 /* start Individual CSS */
 
 /*menu*/
+body header div {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
 
 .menu {
   display: flex;
@@ -116,8 +121,6 @@ body header div a {
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
-
-
 }
 
 .menu li:hover {
@@ -146,9 +149,12 @@ nav {
 
 /*box search*/
 
+input:focus {
+  outline: none;
+}
+
 #form {
   width: 47.584vw;
-  
 }
 
 ::placeholder {
@@ -163,7 +169,6 @@ input {
 
 input[type="text"] {
   padding-left: 10px;
-
 }
 
 input[type="submit"] {
@@ -175,7 +180,6 @@ input[type="submit"] {
   padding-left: 5px;
   background-color: rgb(135, 132, 132, 0.3);
   cursor: pointer;
-
 }
 
 input[src="media/lupawithback.jpg"] {
@@ -193,7 +197,6 @@ input[src="media/lupawithback.jpg"] {
   height: 91px;
   border-top: 5px solid rgb(201, 8, 8);
   display: flex;
-
 }
 
 .searchbox {
@@ -202,7 +205,6 @@ input[src="media/lupawithback.jpg"] {
   position: absolute;
   top: 29px;
   left: 20.864vw;
-
 }
 
 #search {
@@ -226,7 +228,6 @@ header div img {
   position: absolute;
   right: 50px;
   top: 60px;
-
 }
 
 /* sizing logo */
@@ -249,7 +250,11 @@ main img {
 
 /* banner rotativo */
 
-#bannerrotativo {
+.bannerrotativomobile {
+  display: none;
+}
+
+.bannerrotativo {
   width: 90vw;
   height: 27vw;
   margin-left: 4.392vw;
@@ -267,8 +272,6 @@ main img {
   font-size: 1.171vw;
   font-weight: bold;
   box-shadow: 0 10px 20px -10px rgb(97, 96, 96);
-
-
 }
 
 .allminibox {
@@ -282,8 +285,6 @@ main img {
 .pminibox {
   padding-top: 0.952vw;
   text-align: center;
-
-
 }
 
 .imgminibox {
@@ -291,8 +292,6 @@ main img {
   width: auto;
   margin: 0;
   padding-top: 1.464vw;
-
-
 }
 
 #delivery {
@@ -328,6 +327,10 @@ h2 {
   margin-top: 5.857vw;
 }
 
+.containermv {
+  margin-left: 1.098vw;
+}
+
 .allboxmv {
   display: flex;
   justify-content: space-around;
@@ -345,8 +348,6 @@ h2 {
   font-size: 1.171vw;
   font-weight: bold;
   box-shadow: 0 10px 20px -10px rgb(97, 96, 96);
-
-
 }
 
 .coracao {
@@ -356,11 +357,9 @@ h2 {
   margin-top: 1.684vw;
   margin-right: 1.830vw;
   margin-left: 13.836vw;
-  display:block;
+  display: block;
   position: relative;
   top: 1.464vw;
-
-
 }
 
 .dorflex {
@@ -374,8 +373,6 @@ h2 {
   text-align: center;
   font-weight: lighter;
   padding-top: 0px;
-
-
 }
 
 .mvpreço {
@@ -383,7 +380,6 @@ h2 {
   text-align: center;
   font-weight: lighter;
   font-weight: bold;
-
 }
 
 .button {
@@ -401,7 +397,6 @@ h2 {
   line-height: 3.660vw;
   margin-left: 3.148vw;
   margin-top: 1.098vw;
-
 }
 
 .button:hover {
@@ -424,7 +419,6 @@ h2 {
   line-height: 1.830vw;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.025vw;
-
 }
 
 /* Banners anúncios pequenos */
@@ -432,7 +426,6 @@ h2 {
 #minibanners1 {
   display: flex;
   justify-content: space-around;
-
 }
 
 .minibanner {
@@ -443,6 +436,10 @@ h2 {
 }
 
 /* publi loreal */
+
+#lorealmobile {
+  display: none;
+}
 
 .loreal {
   display: flex;
@@ -463,13 +460,20 @@ h2 {
   margin-bottom: 8.053vw;
 }
 
+#minibannermobile {
+  display: none;
+}
+
 /*footer */
+
+.footermobile {
+  display: none;
+}
 
 #retangulored {
   width: 100%;
   height: 1.098vw;
   background-color: red;
-
 }
 
 footer {
@@ -478,8 +482,6 @@ footer {
   background-color: #F2ECEC;
   border-top: 3.294vw solid #0E0EAC;
   position: relative;
-
-
 }
 
 #contatos {
@@ -490,8 +492,6 @@ footer {
   margin: 2.562vw auto;
   display: flex;
   justify-content: space-around;
-
-
 }
 
 .divcontatos {
@@ -598,7 +598,6 @@ footer {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.098vw;
   font-weight: lighter;
-
 }
 
 .diviconescontatos {
@@ -607,12 +606,9 @@ footer {
   margin-bottom: 1vw;
 }
 
-.divcontatos  div{
+.divcontatos div {
   width: 19.302vw;
   height: 2.196vw;
-  
-  
-
 }
 
 
@@ -624,7 +620,6 @@ footer {
 
 .listdg {
   list-style-type: none;
-
 }
 
 .dadosgerais ul a {
@@ -643,11 +638,11 @@ footer {
 /* final */
 
 #infofinal {
-  display:flex;
+  display: flex;
   width: 85%;
   margin-left: 5.124vw;
   margin-top: 3vw;
-  
+
 }
 
 #logofinalpg {
@@ -666,30 +661,21 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   opacity: 0.6;
   margin-left: 3.660vw;
- 
-
-  /* display: grid;
-  grid-column: 2/5;
-  opacity: 0.6;
-  padding-top: 1.830vw; */
 }
 
 /*media query */
 
 @media screen and (max-width: 1100px) {
-  
-  
+
   #search {
     width: 30vw;
   }
 
   #login {
-    
     right: 18vw;
     width: 180px;
     height: 50px;
     margin-left: 10px;
-    
   }
 
   #logomf {
@@ -700,11 +686,10 @@ footer {
   }
 
   #cesta {
-    right: 0.732vw;
+    right: 0vw;
     width: 180px;
     height: 50px;
     margin-left: 10px;
-  
   }
 
 }
@@ -722,38 +707,30 @@ footer {
     padding-top: 30px;
   }
 
- /* div cesta */
+  /* div cesta */
   #cesta {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    align-items: center;
     top: 30px;
     right: 0.732vw;
     width: 120px;
     height: 50px;
-  
   }
-  
+
   #cestaimg {
     position: absolute;
     left: 5px;
     height: 40px;
     width: 40px;
-  
-  
   }
-  
+
   .mc {
-    position: absolute;
-    right: 20px;
-    top: 10px;
+    right: 15px;
   }
-  
+
+
   .tcompras {
     right: 15px;
   }
-  
+
 
   /* div login */
 
@@ -766,23 +743,23 @@ footer {
     right: 18vw;
     width: 200px;
     height: 50px;
-    
+
   }
-  
+
   #loginimg {
     position: absolute;
-    left: 48px;
+    left: 32px;
     height: 40px;
     width: 40px;
-  
+
   }
-  
+
   .olb {
     position: absolute;
     right: 0px;
     top: 10px;
   }
-  
+
   .blueb {
     color: blue;
     font-weight: bold;
@@ -790,9 +767,9 @@ footer {
     right: 15px;
     top: 30px;
   }
-  
 }
 
+/*footer */
 
 @media screen and (max-width: 576px) {
 
@@ -824,7 +801,6 @@ footer {
     height: 50px;
     padding-left: 30px;
     padding-top: 25px;
-
   }
 
   #cesta {
@@ -837,5 +813,176 @@ footer {
     width: 50px;
     height: 50px;
     right: 120px;
+  }
+
+  /* mais vendidos e Promoções */
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .allboxmv {
+    margin-top: 0px;
+    margin-left: 4.026vw;
+    margin-right: 4.026vw;
+  }
+
+  .mv {
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+    font-size: 15px;
+    margin: auto;
+  }
+
+  .coracao {
+    height: 30px;
+    width: auto;
+    border-radius: 0;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 150px;
+    display: block;
+    position: relative;
+    top: 15px;
+
+  }
+
+  .dorflex {
+    height: 130px;
+    width: auto;
+    margin: -1.830vw auto;
+    display: flex;
+  }
+
+  .mvbox {
+    padding-top: 0.952vw;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 0px;
+
+
+  }
+
+  .mvpreço {
+    padding-top: 0.732vw;
+    text-align: center;
+    font-weight: lighter;
+    font-weight: bold;
+
+  }
+
+  .button {
+    height: 35px;
+    width: 100px;
+    border-radius: 0.732vw;
+    border: 0px;
+    font-size: 13px;
+    line-height: 3.660vw;
+    margin-left: 50px;
+    margin-top: 1.098vw;
+
+  }
+
+  .tagpromocao {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-right: 12.445vw;
+    width: 65px;
+    height: 35px;
+    border-radius: 50px;
+    line-height: 35px;
+    font-size: 15px;
+  }
+
+  /* banner rotativo */
+
+  #brdesktop {
+    display: none;
+  }
+
+  .bannerrotativomobile {
+    display: block;
+    width: 300px;
+    margin: 50px auto;
+  }
+
+  /*mini banners*/
+  #minibannermobile {
+    display: block;
+    margin: 50px auto;
+    width: 210px;
+    height: 250px;
+    border-radius: 0px;
+  }
+
+  .minibannermb {
+    display: flex;
+    justify-content: center;
+  }
+
+  .minibanner {
+    display: none;
+  }
+
+  .allminibox {
+    display: none;
+  }
+
+  /* Pantene banner */
+  #adjustmargin {
+    margin: 0;
+  }
+
+  .loreal {
+    display: none;
+  }
+
+  #lorealmobile {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .bannerlorealmobile {
+    width: 180px;
+    height: 230px;
+  }
+
+  /* footer */
+
+  footer {
+    display: none;
+  }
+
+  .footermobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    border-top: solid #008094 2px;
+    border-bottom: solid 5px red;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .footermobile ul {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+  }
+
+  .footermobile ul li {
+    margin: 5px 0px;
+  }
+
+  .footermobile ul a {
+    font-size: 20px;
+  }
+
+  .footermobile ul a:hover {
+    color: red;
   }
 }
